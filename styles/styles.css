@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #c7c7c7;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    
+}
+
+.container .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #2B3467;
+    padding: 40px;
+    color: #fff;
+}
+
+.left .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.left .info h1 {
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.left .info p {
+    margin-bottom: 20px;
+}
+
+.left .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.left .titlecontact {
+    margin: 20px;
+}
+.left .contact li {
+    margin: 20px 20px;
+}
+
+p a {
+    color: #fff;
+}
+
+li .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.container .right {
+    display: flex;
+    position: relative;
+    background: #fff;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.right .exp h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.right li {
+    margin: 20px;
+}
+
+.right .tec h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.right .tec table {
+    width: 300px;
+    height: 200px;
+}
+
+.right .intereses h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.right .intereses table {
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+
+
