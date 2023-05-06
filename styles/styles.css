@@ -2,8 +2,8 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #fff;
-    background: rgb(30,12,41);
-    background: linear-gradient(17deg, rgba(30,12,41,1) 0%, rgba(60,12,124,1) 37%, rgba(101,13,134,1) 94%);
+    background: rgb(0,0,0);
+    background: linear-gradient(56deg, rgba(0,0,0,1) 12%, rgba(101,36,134,1) 55%, rgba(28,3,106,1) 100%);
 }
 
 .container {
