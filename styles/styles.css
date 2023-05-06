@@ -2,8 +2,12 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #fff;
+    /* PURPLE BACKGROUND */
     background: rgb(0,0,0);
-    background: linear-gradient(56deg, rgba(0,0,0,1) 12%, rgba(101,36,134,1) 55%, rgba(28,3,106,1) 100%);
+    background: linear-gradient(56deg, rgba(0,0,0,1) 5%, rgba(101,36,134,1) 55%, rgba(28,3,106,1) 100%);
+    /* BLUE BACKGROUND */
+    background: rgb(28,181,224);
+    background: linear-gradient(90deg, rgba(28,181,224,1) 10%, rgba(0,0,70,1) 80%);
 }
 
 .container {
@@ -25,7 +29,22 @@ body {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(0, 0, 0, 0.3);
-    margin: 30px 0px 30px 60px;
+    margin: 20px;
+
+    /* LA VERSIÓN LIGHT */
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container .left {
+    -webkit-box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
 }
 
 .left figure {
@@ -98,7 +117,7 @@ body {
     height: 40px;
     border: none;
     border-radius: 8px;
-    background-color: #3c1870;
+    background-color: #800080;
     -webkit-box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
     box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
@@ -114,17 +133,32 @@ body {
 /* NOW THE RIGHT SIDE */
 
 .container .right {
-    width: 90%;
+    width: 80%;
     max-height: 663px;
     display: grid;
     /* From https://css.glass */
-    background: rgba(0, 0, 0, 0.42);
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(0, 0, 0, 0.3);
-    margin: 30px 60px 30px 20px;
+    margin: 20px;
+    overflow-y: scroll;
+    /* LA VERSIÓN LIGHT */
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container .right {
+    -webkit-box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
 }
 
 .container .right .description {
@@ -133,12 +167,16 @@ body {
 
 .right .description h1 {
     text-transform: uppercase;
-    margin-bottom: 32px;
+    margin: 32px;
 }
 
 .right .description .exp h1 {
-    margin: 50px 20px 32px 20px;
+    margin: 50px 20px 48px 20px;
     font-size: 18px;
+}
+
+.right .description .exp p {
+    
 }
 
 .right .description p {
@@ -152,32 +190,33 @@ body {
     place-items: center;
 }
 
-.right .description .tech h1 {
-    margin-bottom: 16px;
+.right .description .tech img {
+    -webkit-box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 14px -3px rgba(0,0,0,0.75);
+    margin-left: 8px;
 }
 
 .right .description .tech .frontend {
     display: flex;
-    align-items: center;
+    place-items: center;
 }
 
 .right .description .tech .backend {
     display: flex;
-    align-items: center;
+    place-items: center;
 }
 
-.right .description .intereses h1 {
+.right .description .interests h1 {
     margin-top: 16px;
+    margin-bottom: 48px;
 }
 
-.right .description .intereses .subtitle {
+.right .description .interests p.subtitle {
+    margin-top: 32px;
+}
+
+.right .description .interests {
     font-size: 16px;
     text-align: center;
 }
-
-.right .description .intereses p {
-    text-align: justify;
-    padding: 8px 80px;
-}
-
-/* DEBO GENERAR UN SCROLL EN LA SECCION DE LA DERECHA */
